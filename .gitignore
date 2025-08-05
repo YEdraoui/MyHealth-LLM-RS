@@ -1,16 +1,15 @@
-# Dataset files (private/large)
+# Dataset files (too large for git)
 data/
 *.csv
-*.jpg
-*.jpeg
-*.png
-*.tiff
+BRSET/
+../BRSET/
 
 # Model weights (large files)
 *.pth
 *.pt
 *.bin
 *.safetensors
+*.pkl
 
 # Python cache
 __pycache__/
@@ -36,11 +35,9 @@ env/
 .DS_Store
 Thumbs.db
 
-# Logs
+# Logs and temporary files
 *.log
 logs/
-
-# Temporary files
 tmp/
 temp/
 *.tmp
@@ -52,7 +49,12 @@ temp/
 .env
 .env.local
 
-# Large files
+# Large files and archives
 *.zip
 *.tar.gz
 *.rar
+
+# Results and outputs (optional - comment out if you want to track)
+results/
+outputs/
+plots/
