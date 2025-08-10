@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+
+# OS junk
+.DS_Store
+
+# Model weights & logs
+models/
+logs/
+
+# Data folders (keep only CSV labels if needed)
+data/*/fundus_photos/
+data/*/*.zip
+data/*/*.tar.gz
+
+# Temporary files
+*.tmp
+*.log
+
+# Checkpoints
+*.pth
+*.ckpt
