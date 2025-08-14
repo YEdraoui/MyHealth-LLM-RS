@@ -1,28 +1,44 @@
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Virtual env
-venv/
-
-# OS junk
+# OS / editor
 .DS_Store
+.vscode/
+.idea/
 
-# Model weights & logs
-models/
-logs/
-
-# Data folders (keep only CSV labels if needed)
-data/*/fundus_photos/
-data/*/*.zip
-data/*/*.tar.gz
-
-# Temporary files
-*.tmp
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env*
 *.log
 
-# Checkpoints
+# Build / cache / models
+cache/
+logs/
+wandb/
+mlruns/
+runs/
+models/
+checkpoints/
 *.pth
+*.pt
+*.onnx
 *.ckpt
+*.npz
+
+# Local artifacts (do not push)
+BRSET_SUMMARY.txt
+PROJECT_TREE.txt
+NORMALIZE_AND_SPLIT_LOG.txt
+
+# Data: ignore everything in data/**
+data/**
+
+# Keep only empty placeholder so tree exists
+!data/
+!data/README.md
+
+# If you later decide to version **only** split manifests (not images!), you can un-comment these:
+# !data/splits/
+# !data/splits/manifest.json
+# (But keep images and labels private.)
