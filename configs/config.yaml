@@ -1,0 +1,10 @@
+data_root: /Users/mac/Desktop/Internship/LLM Model/medication_recommendation_model/data/BRSET
+labels_csv: /Users/mac/Desktop/Internship/LLM Model/medication_recommendation_model/data/BRSET/labels_normalized.csv
+splits_dir: /Users/mac/Desktop/Internship/LLM Model/medication_recommendation_model/data/splits
+labels:
+- diabetic_retinopathy
+- macular_edema
+- amd
+- retinal_detachment
+- increased_cup_disc
+- other

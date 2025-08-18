@@ -1,44 +1,31 @@
-# OS / editor
-.DS_Store
-.vscode/
-.idea/
-
-# Python
+# virtual env
+.venv*/
 __pycache__/
-*.py[cod]
-*.egg-info/
-.venv/
-venv/
-.env*
-*.log
+*.pyc
+*.pyo
 
-# Build / cache / models
-cache/
-logs/
-wandb/
-mlruns/
-runs/
+# datasets (raw + normalized + splits)
+data/
+a-brazilian-multilabel-ophthalmological-dataset-brset-1.0.1/
+*.zip
+
+# model artifacts / reports / logs
 models/
-checkpoints/
-*.pth
-*.pt
-*.onnx
-*.ckpt
+reports/
+logs/
+
+# images & big binaries anywhere
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.bmp
 *.npz
+*.pt
+*.pth
+*.ckpt
 
-# Local artifacts (do not push)
-BRSET_SUMMARY.txt
-PROJECT_TREE.txt
-NORMALIZE_AND_SPLIT_LOG.txt
-
-# Data: ignore everything in data/**
-data/**
-
-# Keep only empty placeholder so tree exists
-!data/
-!data/README.md
-
-# If you later decide to version **only** split manifests (not images!), you can un-comment these:
-# !data/splits/
-# !data/splits/manifest.json
-# (But keep images and labels private.)
+# OS junk
+.DS_Store
+*.DS_Store

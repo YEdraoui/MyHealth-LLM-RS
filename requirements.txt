@@ -1,0 +1,13 @@
+pyyaml
+tqdm
+scikit-learn
+pillow
+matplotlib
+pandas
+# Uncomment and set CUDA index for GPUs later:
+# torch
+# torchvision
+# torchaudio
+torch
+torchvision
+torchaudio
