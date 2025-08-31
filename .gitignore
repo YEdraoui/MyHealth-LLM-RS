@@ -1,31 +1,18 @@
-# virtual env
-.venv*/
-__pycache__/
-*.pyc
-*.pyo
-
-# datasets (raw + normalized + splits)
-data/
+﻿# data & heavy outputs
 a-brazilian-multilabel-ophthalmological-dataset-brset-1.0.1/
+heatmaps/
+.cache/
+demo_outputs/
+reports/*.csv
 *.zip
 
-# model artifacts / reports / logs
-models/
-reports/
-logs/
-
-# images & big binaries anywhere
-*.jpg
-*.jpeg
-*.png
-*.tif
-*.tiff
-*.bmp
-*.npz
-*.pt
-*.pth
-*.ckpt
-
-# OS junk
+# editor/system
 .DS_Store
-*.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+.ipynb_checkpoints/
+
+# if you later decide NOT to use LFS for models, uncomment to ignore:
+# models/*.onnx
+# models/*.pt
