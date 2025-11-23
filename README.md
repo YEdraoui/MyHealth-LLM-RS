@@ -1,4 +1,4 @@
-﻿#  Ophthalmology AI - Clinical Decision Support System
+#  Ophthalmology AI - Clinical Decision Support System
 
 A full-stack AI-powered web application for diabetic retinopathy detection and clinical report generation.
 
